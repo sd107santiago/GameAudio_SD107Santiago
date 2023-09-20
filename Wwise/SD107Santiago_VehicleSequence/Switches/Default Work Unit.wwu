@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{BB5C0FAB-8B80-4422-870F-E205F94CC5CD}" SchemaVersion="110">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{BB5C0FAB-8B80-4422-870F-E205F94CC5CD}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{BB5C0FAB-8B80-4422-870F-E205F94CC5CD}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Vehicle" ID="{C13A605F-B4F7-4F8F-A5A8-E3A593033271}">
+					<ChildrenList>
+						<Switch Name="Off" ID="{838FF2E5-B749-4FA8-87E1-B8A7FC91B4FB}"/>
+						<Switch Name="Crash" ID="{88C9688E-06B3-4937-B44B-B05608593010}"/>
+						<Switch Name="Skid" ID="{C5361BE7-5E79-4A2F-A186-510AF3E60F53}"/>
+						<Switch Name="Pass" ID="{CFB1F6EC-B294-4F07-B2F9-886D297AA4CB}"/>
+						<Switch Name="Start" ID="{CA93FD9D-985A-4471-AC95-FE6DAD5C1E8E}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>

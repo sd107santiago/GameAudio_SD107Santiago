@@ -1,6 +1,206 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{2E10A333-447C-44CD-9C91-FDF5E8919687}" SchemaVersion="110" RootDocumentID="{4F19121E-154B-4FD8-ADF5-1CBAF8A3B2AB}" ParentDocumentID="{4F19121E-154B-4FD8-ADF5-1CBAF8A3B2AB}">
 	<AudioObjects>
-		<WorkUnit Name="Vehicle" ID="{2E10A333-447C-44CD-9C91-FDF5E8919687}" OwnerID="{4F19121E-154B-4FD8-ADF5-1CBAF8A3B2AB}" PersistMode="Nested"/>
+		<WorkUnit Name="Vehicle" ID="{2E10A333-447C-44CD-9C91-FDF5E8919687}" OwnerID="{4F19121E-154B-4FD8-ADF5-1CBAF8A3B2AB}" PersistMode="Nested">
+			<ChildrenList>
+				<SwitchContainer Name="Vehicle_Sequence" ID="{B0D0EA86-A5CF-4DD1-944B-FC464E6CB383}" ShortID="196577899">
+					<PropertyList>
+						<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{833D0D98-815C-41B1-9424-FA379E531D6C}"/>
+						</Reference>
+						<Reference Name="DefaultSwitchOrState">
+							<ObjectRef Name="Start" ID="{CA93FD9D-985A-4471-AC95-FE6DAD5C1E8E}" WorkUnitID="{BB5C0FAB-8B80-4422-870F-E205F94CC5CD}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DCA74288-8E08-41AB-A1CF-BE1A5C4D224C}"/>
+						</Reference>
+						<Reference Name="SwitchGroupOrStateGroup">
+							<ObjectRef Name="Vehicle" ID="{C13A605F-B4F7-4F8F-A5A8-E3A593033271}" WorkUnitID="{BB5C0FAB-8B80-4422-870F-E205F94CC5CD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="CarCrash" ID="{62A1773B-7EB2-4EE8-A426-FA6A26CA237D}" ShortID="1001352000">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{833D0D98-815C-41B1-9424-FA379E531D6C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DCA74288-8E08-41AB-A1CF-BE1A5C4D224C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="CarCrash" ID="{63E46BF2-5EAA-4390-8696-F647ED203362}">
+									<Language>SFX</Language>
+									<AudioFile>SFX\CarCrash.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="178435281"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="CarCrash" ID="{63E46BF2-5EAA-4390-8696-F647ED203362}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Car_Pass" ID="{A49C44A4-FDCE-4B6E-9DC8-1AF66209977F}" ShortID="6456304">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{833D0D98-815C-41B1-9424-FA379E531D6C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DCA74288-8E08-41AB-A1CF-BE1A5C4D224C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Car_Pass" ID="{49BE415F-7901-4D9E-8B36-2B85A90054BC}">
+									<Language>SFX</Language>
+									<AudioFile>SFX\Car_Pass.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="323924915"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Car_Pass" ID="{49BE415F-7901-4D9E-8B36-2B85A90054BC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Car_Skid" ID="{C40E449B-C545-49ED-99F0-88C1DBD6F904}" ShortID="41542250">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{833D0D98-815C-41B1-9424-FA379E531D6C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DCA74288-8E08-41AB-A1CF-BE1A5C4D224C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Car_Skid" ID="{53DA0420-8CDF-4BE4-9CAF-1B5AD09A10DE}">
+									<Language>SFX</Language>
+									<AudioFile>SFX\Car_Skid.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="945502283"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Car_Skid" ID="{53DA0420-8CDF-4BE4-9CAF-1B5AD09A10DE}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Car_Off" ID="{7BDE157E-5B6B-487A-AB54-5D6AFC3B76E7}" ShortID="828421227">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{833D0D98-815C-41B1-9424-FA379E531D6C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DCA74288-8E08-41AB-A1CF-BE1A5C4D224C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Car_Off" ID="{FA9A4AC4-5F9E-45A2-B324-8C4798BE10D0}">
+									<Language>SFX</Language>
+									<AudioFile>SFX\Car_Off.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="468015611"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Car_Off" ID="{FA9A4AC4-5F9E-45A2-B324-8C4798BE10D0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Car_Start" ID="{AE948578-9A57-4F5C-9647-0C960CE2D0B9}" ShortID="189150840">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{833D0D98-815C-41B1-9424-FA379E531D6C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DCA74288-8E08-41AB-A1CF-BE1A5C4D224C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Car_Start" ID="{F90B83FE-E683-4573-B129-AC0B9F5395B1}">
+									<Language>SFX</Language>
+									<AudioFile>SFX\Car_Start.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="452995367"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Car_Start" ID="{F90B83FE-E683-4573-B129-AC0B9F5395B1}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<GroupingInfo>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="CarCrash" ID="{62A1773B-7EB2-4EE8-A426-FA6A26CA237D}"/>
+								<PropertyList>
+									<Property Name="ContinuePlay" Type="bool" Value="True"/>
+								</PropertyList>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Car_Start" ID="{AE948578-9A57-4F5C-9647-0C960CE2D0B9}"/>
+								<PropertyList>
+									<Property Name="ContinuePlay" Type="bool" Value="True"/>
+								</PropertyList>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Car_Off" ID="{7BDE157E-5B6B-487A-AB54-5D6AFC3B76E7}"/>
+								<PropertyList>
+									<Property Name="ContinuePlay" Type="bool" Value="True"/>
+								</PropertyList>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Car_Skid" ID="{C40E449B-C545-49ED-99F0-88C1DBD6F904}"/>
+								<PropertyList>
+									<Property Name="ContinuePlay" Type="bool" Value="True"/>
+								</PropertyList>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Car_Pass" ID="{A49C44A4-FDCE-4B6E-9DC8-1AF66209977F}"/>
+								<PropertyList>
+									<Property Name="ContinuePlay" Type="bool" Value="True"/>
+								</PropertyList>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="Crash" ID="{88C9688E-06B3-4937-B44B-B05608593010}"/>
+								<ItemList>
+									<ItemRef Name="CarCrash" ID="{62A1773B-7EB2-4EE8-A426-FA6A26CA237D}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Start" ID="{CA93FD9D-985A-4471-AC95-FE6DAD5C1E8E}"/>
+								<ItemList>
+									<ItemRef Name="Car_Start" ID="{AE948578-9A57-4F5C-9647-0C960CE2D0B9}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Off" ID="{838FF2E5-B749-4FA8-87E1-B8A7FC91B4FB}"/>
+								<ItemList>
+									<ItemRef Name="Car_Off" ID="{7BDE157E-5B6B-487A-AB54-5D6AFC3B76E7}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Skid" ID="{C5361BE7-5E79-4A2F-A186-510AF3E60F53}"/>
+								<ItemList>
+									<ItemRef Name="Car_Skid" ID="{C40E449B-C545-49ED-99F0-88C1DBD6F904}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Pass" ID="{CFB1F6EC-B294-4F07-B2F9-886D297AA4CB}"/>
+								<ItemList>
+									<ItemRef Name="Car_Pass" ID="{A49C44A4-FDCE-4B6E-9DC8-1AF66209977F}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
+					</GroupingInfo>
+				</SwitchContainer>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>
