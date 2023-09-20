@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{43617460-A7F8-48A0-B96A-B28007685E57}" SchemaVersion="110" RootDocumentID="{FF6168C1-67CB-43BE-ACF6-5EB39E2E9E68}" ParentDocumentID="{FF6168C1-67CB-43BE-ACF6-5EB39E2E9E68}">
+	<Events>
+		<WorkUnit Name="Vehicle" ID="{43617460-A7F8-48A0-B96A-B28007685E57}" OwnerID="{FF6168C1-67CB-43BE-ACF6-5EB39E2E9E68}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="Vehicle" ID="{7F69D8F1-5E16-44B5-9C4F-F2C080B43BE2}">
+					<ChildrenList>
+						<Action Name="" ID="{7D508936-F826-4D2F-BD20-FD54F667077D}" ShortID="109981567">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Vehicle_Sequence" ID="{B0D0EA86-A5CF-4DD1-944B-FC464E6CB383}" WorkUnitID="{2E10A333-447C-44CD-9C91-FDF5E8919687}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

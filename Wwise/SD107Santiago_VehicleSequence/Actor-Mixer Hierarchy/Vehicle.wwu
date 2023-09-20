@@ -139,30 +139,80 @@
 								<ItemRef Name="CarCrash" ID="{62A1773B-7EB2-4EE8-A426-FA6A26CA237D}"/>
 								<PropertyList>
 									<Property Name="ContinuePlay" Type="bool" Value="True"/>
+									<Property Name="FadeInTime" Type="Real64">
+										<ValueList>
+											<Value>1</Value>
+										</ValueList>
+									</Property>
+									<Property Name="FadeOutTime" Type="Real64">
+										<ValueList>
+											<Value>2</Value>
+										</ValueList>
+									</Property>
 								</PropertyList>
 							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="Car_Start" ID="{AE948578-9A57-4F5C-9647-0C960CE2D0B9}"/>
 								<PropertyList>
 									<Property Name="ContinuePlay" Type="bool" Value="True"/>
+									<Property Name="FadeInTime" Type="Real64">
+										<ValueList>
+											<Value>1</Value>
+										</ValueList>
+									</Property>
+									<Property Name="FadeOutTime" Type="Real64">
+										<ValueList>
+											<Value>1</Value>
+										</ValueList>
+									</Property>
 								</PropertyList>
 							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="Car_Off" ID="{7BDE157E-5B6B-487A-AB54-5D6AFC3B76E7}"/>
 								<PropertyList>
 									<Property Name="ContinuePlay" Type="bool" Value="True"/>
+									<Property Name="FadeInTime" Type="Real64">
+										<ValueList>
+											<Value>1</Value>
+										</ValueList>
+									</Property>
+									<Property Name="FadeOutTime" Type="Real64">
+										<ValueList>
+											<Value>2</Value>
+										</ValueList>
+									</Property>
 								</PropertyList>
 							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="Car_Skid" ID="{C40E449B-C545-49ED-99F0-88C1DBD6F904}"/>
 								<PropertyList>
 									<Property Name="ContinuePlay" Type="bool" Value="True"/>
+									<Property Name="FadeInTime" Type="Real64">
+										<ValueList>
+											<Value>1</Value>
+										</ValueList>
+									</Property>
+									<Property Name="FadeOutTime" Type="Real64">
+										<ValueList>
+											<Value>3</Value>
+										</ValueList>
+									</Property>
 								</PropertyList>
 							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="Car_Pass" ID="{A49C44A4-FDCE-4B6E-9DC8-1AF66209977F}"/>
 								<PropertyList>
 									<Property Name="ContinuePlay" Type="bool" Value="True"/>
+									<Property Name="FadeInTime" Type="Real64">
+										<ValueList>
+											<Value>2</Value>
+										</ValueList>
+									</Property>
+									<Property Name="FadeOutTime" Type="Real64">
+										<ValueList>
+											<Value>2</Value>
+										</ValueList>
+									</Property>
 								</PropertyList>
 							</GroupingBehavior>
 						</GroupingBehaviorList>
