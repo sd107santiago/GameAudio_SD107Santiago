@@ -2,6 +2,10 @@
 <WwiseDocument Type="WorkUnit" ID="{2E10A333-447C-44CD-9C91-FDF5E8919687}" SchemaVersion="110" RootDocumentID="{4F19121E-154B-4FD8-ADF5-1CBAF8A3B2AB}" ParentDocumentID="{4F19121E-154B-4FD8-ADF5-1CBAF8A3B2AB}">
 	<AudioObjects>
 		<WorkUnit Name="Vehicle" ID="{2E10A333-447C-44CD-9C91-FDF5E8919687}" OwnerID="{4F19121E-154B-4FD8-ADF5-1CBAF8A3B2AB}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="15"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
 			<ChildrenList>
 				<SwitchContainer Name="Vehicle_Sequence" ID="{B0D0EA86-A5CF-4DD1-944B-FC464E6CB383}" ShortID="196577899">
 					<PropertyList>
